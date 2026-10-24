@@ -1,0 +1,20 @@
+{
+  "image": "deleted_account_reference_20260310.png",
+  "extracted_text": "Based on the provided system console screenshot, here is the extracted information:\n\n### **Usernames & Customer References**\n* **Username / Customer Key:** `user_17`\n* **Reference Type:** Customer key\n* **Owner Team:** Account Platform\n* **Region:** `eu-west`\n* **Status Tag:** Retained reference\n\n### **Dates & Timestamps**\n* **Created:** 11 Jan 2024 08:42 UTC\n* **Most Recent Update:** 10 Mar 2026 07:18 UTC\n\n### **Status Codes / States**\n* **Status:** Active (for all table entries, indicated with green dots)\n\n### **Table Rows (Overview Section)**\n1. **System:** Orders | **Record Reference:** ORD-20263245 | **Relationship:** Linked to customer | **Created (UTC):** 11 Jan 2024 08:45 | **Status:** Active\n2. **System:** Support | **Record Reference:** CS-3245 | **Relationship:** Linked to customer | **Created (UTC):** 14 Feb 2024 12:16 | **Status:** Active\n3. **System:** Support | **Record Reference:** CS-3378 | **Relationship:** Linked to customer | **Created (UTC):** 03 Jun 2024 09:27 | **Status:** Active\n4. **System:** Finance | **Record Reference:** FIN-7742 | **Relationship:** Linked to customer | **Created (UTC):** 22 Aug 2024 15:03 | **Status:** Active\n\n### **History Panel**\n* **10 Mar 2026:** Metadata reviewed\n* **22 Aug 2024:** Finance link added\n* **03 Jun 2024:** Support link added\n* **14 Feb 2024:** Support link added\n* **11 Jan 2024:** Reference created\n\n### **Activity Feed**\n* **11 Jan 2024:** Reference created *(Recorded)*\n* **Order link added:** ORD-20263245\n* **Support links added:** CS-3245, CS-3378\n* **Finance link added:** FIN-7742\n* **Metadata reviewed:** *(Recorded)*\n\n---\n*(Note: No email addresses, resource IDs, or error status codes like 404 or DELETED appear in this specific screenshot.)*",
+  "usage": {
+    "promptTokenCount": 1142,
+    "candidatesTokenCount": 563,
+    "totalTokenCount": 1705,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1092
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

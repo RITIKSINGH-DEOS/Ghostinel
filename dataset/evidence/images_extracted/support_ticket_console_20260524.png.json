@@ -1,0 +1,20 @@
+{
+  "image": "support_ticket_console_20260524.png",
+  "extracted_text": "Based on the screenshot of the Northstar Shop Helpline Console, here is all the extracted information categorized as requested:\n\n### **Resource IDs & Customer References**\n* **Ticket ID / Subject:** CS-5034 \u00b7 Where is my delivery?\n* **Order Reference:** ORD-20265034\n* **Tracking Number:** SWF-884103\n\n### **User IDs, Usernames & Emails**\n* **User ID / Internal Tag:** support_1034\n* **Customer Name:** Kofi Agyeman\n* **Customer Email:** kagyeman8947@fastmail.com\n* **Assigned Agent:** Maya Chen\n\n### **Status Codes & Labels**\n* **SLA Status:** SLA 01:42\n* **Priority:** Normal priority\n* **Order Status:** In transit\n* **Tags:** Delivery \u00b7 Tracking \u00b7 Order update\n* **Environment:** Production (indicated in top right and bottom left)\n\n### **Dates & Timestamps**\n* **Conversation Timestamps:**\n  * 09:12\n  * 09:13\n  * 09:28\n  * 09:35\n* **Activity Timeline Dates:**\n  * 22 May (Order confirmed)\n  * 23 May (Dispatched)\n  * 24 May 07:46 (Reached regional hub)\n  * 24 May 08:15 (In transit)\n  * 26 May 2026 (Expected delivery) / 26 May (Delivery expected)\n\n---\n\n### **Table Rows (Conversation History)**\n\n| Index | Time | Sender | Message |\n| :--- | :--- | :--- | :--- |\n| **1** | 09:12 | Kofi Agyeman | Could you let me know where my order is and when it is expected to arrive? |\n| **2** | 09:13 | Northstar Bot | We received your message and are checking the order details. |\n| **3** | 09:28 | Maya Chen | The parcel reached the regional hub and is on track for delivery on 26 May. |\n| **4** | 09:35 | Kofi Agyeman | Thanks for the update. |\n\n---\n\n### **Table Rows (Order Details - ORD-20265034)**\n\n| Property | Value |\n| :--- | :--- |\n| **Product** | Running shoes |\n| **Status** | In transit |\n| **Carrier** | SwiftShip |\n| **Tracking** | SWF-884103 |\n| **Expected** | 26 May 2026 |\n| **Assigned agent** | Maya Chen |",
+  "usage": {
+    "promptTokenCount": 1130,
+    "candidatesTokenCount": 613,
+    "totalTokenCount": 1743,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1080
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

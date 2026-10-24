@@ -1,0 +1,20 @@
+{
+  "image": "object_storage_browser_20260213.png",
+  "extracted_text": "Based on the provided screenshot of the Northstar Shop system console (Nimbus Object Storage), here is the extracted information:\n\n### **General Information & Navigation**\n* **Application Title:** Northstar Shop / Nimbus Object Storage\n* **Current Path:** `Northstar Shop / Nimbus Object Storage / northstar-customer-data`\n* **Breadcrumb Path / Scope:** `eu-west-1 / support-attachments / 2026 / 02`\n* **Bucket Name Header:** `northstar-customer-data` (marked with tag: `8 objects`)\n* **Environment:** Production\n* **Region:** `eu-west-1`\n* **Account:** Northstar Production\n* **Capture Timestamp:** 13 Feb 2026 08:00 UTC\n* **Storage Class Filter:** All\n* **Action Buttons Available:** Filter, Export, Actions\n\n---\n\n### **Sidebar Navigation Items**\n* Buckets\n* Access policies\n* Monitoring\n* Settings\n* `northstar-assets`\n* `northstar-customer-data` (Currently Selected)\n* `northstar-logs`\n* **Footer details:** Nimbus Object Storage, Production workspace, build 2026.10.4\n\n---\n\n### **Table Rows (Objects List)**\n*Updated moments ago \u2022 8 records*\n\n| Index / ID | Name | Size | Modified (UTC) | Storage Class | Version |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **1** | delivery_confirmation_19.pdf | 684 KB | 12 Feb 18:42 | Standard | v3 |\n| **2** | delivery_confirmation_20.pdf | 712 KB | 11 Feb 14:17 | Standard | v1 |\n| **3** | return_label_4821.pdf | 203 KB | 10 Feb 09:33 | Standard | v1 |\n| **4** | return_label_4876.pdf | 198 KB | 11 Feb 16:05 | Standard | v2 |\n| **5** | invoice_NS-10493.pdf | 318 KB | 10 Feb 11:21 | Standard | v1 |\n| **6** | parcel_damage_7713.jpg | 2.4 MB | 12 Feb 10:08 | Standard | v1 |\n| **7** | customer_export_2026-02-10.zip | 128 MB | 10 Feb 23:14 | Standard | v1 |\n| **8** | customer_export_2026-02-12.zip | 131 MB | 12 Feb 21:56 | Standard | v1 |\n\n---\n\n### **Selected Object Details Panel (`delivery_confirmation_19.pdf`)**\n* **Size:** 684 KB\n* **Version:** v3\n* **Content Type:** `application/pdf`\n* **Encryption:** `AES-256`\n* **Checksum:** `e71b6d...`\n* **Uploader:** `support-service`\n* **Modified Timestamp:** 12 Feb 2026 18:42 UTC\n\n#### **Activity Log (for selected object):**\n* **v3:** 12 Feb 18:42 \u2022 metadata update\n* **v2:** 12 Feb 18:39 \u2022 upload complete\n* **v1:** 12 Feb 18:38 \u2022 object created",
+  "usage": {
+    "promptTokenCount": 1116,
+    "candidatesTokenCount": 822,
+    "totalTokenCount": 1938,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1066
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

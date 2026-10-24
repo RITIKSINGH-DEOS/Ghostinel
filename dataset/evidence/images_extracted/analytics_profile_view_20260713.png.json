@@ -1,0 +1,20 @@
+{
+  "image": "analytics_profile_view_20260713.png",
+  "extracted_text": "Based on the provided screenshot of the Northstar Shop console, here is the extracted information categorized as requested:\n\n### **User IDs, Usernames, Emails, & References**\n* **User ID / Internal reference:** `user_20`\n* **Analytics ID:** `analytics_7438`\n* **Username / Name:** `Omar Darwish`\n* **Email:** `darwish.omar@icloud.com`\n\n---\n\n### **Resource IDs & Status Codes**\n* *No specific cloud resource IDs (e.g., UUIDs) or standard HTTP status codes (e.g., 404) appear in this view.*\n* **Filter Range Tag:** `Last 90 days`\n\n---\n\n### **Dates & Timestamps**\n* **Last activity:** `13 Jul 2026 14:22 UTC`\n* **First seen:** `21 Apr 2026 09:14 UTC`\n* **Activity Log Dates:**\n  * `13 Jul` (6 events in active session)\n  * `08 Jul` (Order completed \u00b7 USD 83.21)\n  * `30 Jun` (Product search \u00b7 coffee set)\n  * `22 Jun` (Campaign opened)\n* **Event Timeline Timestamps (Today's events):**\n  * `14:22`\n  * `14:20`\n  * `14:17`\n  * `14:16`\n  * `14:12`\n\n---\n\n### **Table Rows (Event Timeline)**\n\n| Index / Row | Time | Event | Product / detail | Value | Device |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **1** | 14:22 | Order completed | Ceramic coffee set | USD 84.21 | Mobile |\n| **2** | 14:20 | Checkout started | 2 items | USD 84.21 | Mobile |\n| **3** | 14:17 | Product viewed | Ceramic coffee set | \u2014 | Mobile |\n| **4** | 14:16 | Added to cart | Ceramic coffee set | USD 42.00 | Mobile |\n| **5** | 14:12 | Product viewed | Stoneware mug | USD 18.00 | Desktop |\n\n---\n\n### **Additional Metrics & Metadata**\n* **Environment:** Production (`Production workspace`, version `build 2026.10.4`)\n* **Top Stats Cards:**\n  * **Sessions:** `12`\n  * **Products viewed:** `19`\n  * **Completed orders:** `2`\n  * **Revenue:** `USD 167.42`\n  * **Mobile / Desktop:** `67% / 33%`\n  * **Acquisition:** `Organic search`\n* **Profile Attributes:**\n  * **Market:** AE\n  * **Audience:** Returning shopper\n  * **Interest:** Coffee & dining",
+  "usage": {
+    "promptTokenCount": 1116,
+    "candidatesTokenCount": 684,
+    "totalTokenCount": 1800,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1066
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

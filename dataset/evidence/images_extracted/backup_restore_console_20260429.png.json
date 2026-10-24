@@ -1,0 +1,20 @@
+{
+  "image": "backup_restore_console_20260429.png",
+  "extracted_text": "Based on the provided screenshot of the Northstar Shop Vault Recovery Manager console, here is the extracted information:\n\n### **General System & Environment Info**\n* **Application:** Northstar Shop / Vault Recovery Manager / Recovery Manager\n* **View Title:** Customer-platform archives (`Healthy`)\n* **Subtitle:** Northstar Production \u00b7 weekly snapshots\n* **Search Bar Placeholder:** `Search archives, accounts or restore requests...`\n* **Environment:** Production\n* **Help:** Help\n* **User Profile:** VR\n* **Console Footer:** Vault Recovery Manager | Production workspace | build 2026.10.4\n\n---\n\n### **Navigation Menu Items**\n* Overview\n* Recovery Manager *(Active)*\n* Customer platforms\n* Restore requests\n* Infrastructure\n* Reports\n\n---\n\n### **Metric Summary Cards**\n1. **Service health:** Healthy\n2. **Storage growth:** +12.4%\n3. **Restore success:** 99.6%\n4. **Stored:** 1.35 PB\n\n---\n\n### **Tabs**\n* Archives *(Active)*\n* Recent restores\n* Infrastructure health\n\n---\n\n### **Archives Table**\n* **Table Header:** Updated moments ago \u00b7 4 records\n\n| Archive ID | Account / Email | Region | Created | Size | Encryption | Tier |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **backup_9291** | bluepeakco@outlook.com | ap-southeast-1 | 26 Apr 02:00 | 102.3 GB | AES-256 | Archive |\n| **backup_9288** | miller.logistics@company.com | us-west-2 | 26 Apr 02:00 | 67.1 GB | AES-256 | Archive |\n| **backup_9287** | areed1433@gmail.com | eu-west-1 | 26 Apr 02:00 | 84.7 GB | AES-256 | Archive |\n| **backup_9286** | summit-retail@company.com | us-east-1 | 26 Apr 02:00 | 91.4 GB | AES-256 | Archive |\n\n---\n\n### **Right Sidebar: Selected Resource Details (`backup_9287`)**\n\n* **Account / Email:** areed1433@gmail.com\n* **Path:** `s3://northstar-backups/customer-platform/weekly/segment-42-20260426.tar.zst`\n* **Region:** eu-west-1\n* **Created:** 26 Apr 2026 02:00 UTC\n* **Encryption:** AES-256\n* **Checksum:** Verified\n* **Last drill:** 29 Mar 2026\n* **Retention end:** 26 Jul 2026\n\n#### **Activity Log:**\n* **25 Apr:** `backup_9286 restored \u00b7 Completed`\n* **24 Apr:** `backup_9281 restored \u00b7 Completed`\n* **22 Apr:** `checksum verification \u00b7 Completed`",
+  "usage": {
+    "promptTokenCount": 1116,
+    "candidatesTokenCount": 719,
+    "totalTokenCount": 1835,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1066
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

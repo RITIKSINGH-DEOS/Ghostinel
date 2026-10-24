@@ -1,0 +1,20 @@
+{
+  "image": "account_admin_console_20260926.png",
+  "extracted_text": "Based on the screenshot provided, here is all the extracted information categorized by the requested fields:\n\n### **Usernames & User IDs**\n* **Name:** Haruka Sato\n* **Username / Account ID:** `user_11` / `account_5762`\n* **Loyalty Tier:** Silver\n\n### **Emails**\n* `haruka.s1838@zoho.com`\n\n### **Resource IDs & Customer References**\n* **Order IDs:** \n  * `ORD-20265762`\n  * `ORD-20265518`\n* **Support Ticket References:** \n  * `CS-8538`\n  * `support_9538`\n\n### **Status Codes / Statuses**\n* **Silver** (Loyalty Tier badge)\n* **Delivered \u00b7 18 Sep** (Order status with green indicator)\n* **Returned \u00b7 03 Sep** (Order status)\n\n### **Dates & Timestamps**\n* **Last Contact:** 24 Sep 2026 09:14 JST\n* **Member Since:** 12 Jan 2024\n* **Activity Timeline:**\n  * **24 Sep:** Customer replied to CS-8538\n  * **22 Sep:** Support agent responded\n  * **18 Sep:** Order ORD-20265762 delivered\n  * **03 Sep:** Order ORD-20265518 returned\n  * **28 Aug:** support_9538 created\n* **Table Dates:**\n  * `12 Sep 2026` (Order ORD-20265762)\n  * `28 Aug 2026` (Order ORD-20265518)\n\n---\n\n### **Table Rows (Overview Tab)**\n\n| Order ID | Date | Item | Qty | Total | Status |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **1** ORD-20265762 | 12 Sep 2026 | Ceramic coffee set | 1 | JPY 8,900 | Delivered \u00b7 18 Sep |\n| **2** ORD-20265518 | 28 Aug 2026 | Travel backpack | 1 | JPY 12,400 | Returned \u00b7 03 Sep |\n\n---\n\n### **Additional Extracted Details**\n* **Navigation/Breadcrumb:** Northstar Shop / Customer Operations / Customers\n* **Phone Number:** +81 90 7610 2507\n* **Signup Channel:** mobile_app\n* **Market:** JP\n* **Preferred Language:** Japanese\n* **Default Address:** 2-18-4 Kichijoji, Musashino, Tokyo 180-0004\n* **Environment:** Production workspace (build 2026.10.4)",
+  "usage": {
+    "promptTokenCount": 1130,
+    "candidatesTokenCount": 676,
+    "totalTokenCount": 1806,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1080
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

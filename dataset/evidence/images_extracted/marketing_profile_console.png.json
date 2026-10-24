@@ -1,0 +1,20 @@
+{
+  "image": "marketing_profile_console.png",
+  "extracted_text": "Based on the system console screenshot provided, here is all the extracted information categorized as requested:\n\n### **Usernames & Customer References**\n* **Name:** Soo-jin Park\n* **Username / Customer ID:** `marketing_001`\n* **Phone Number:** `+82 10-5837-9451`\n\n### **Emails**\n* `sj.park@naver.com`\n\n### **Status Codes & Indicators**\n* **Status:** `Live` (Green indicator badge next to the user's name)\n\n### **Dates / Timestamps**\n* **Last Refreshed:** `15 Sep 2026 23:40 UTC`\n* **System Build Info:** `build 2026.10.4`\n\n---\n\n### **Table Rows & Panels Data**\n\n#### **Top Metric Cards**\n* **Market:** South Korea\n* **Language:** Korean\n* **Email opt-in:** Yes\n* **SMS opt-in:** No\n* **Last refreshed:** 15 Sep 2026 23:40 UTC\n\n#### **Profile Table (Activity Log)**\n* **Row 1:** \n  * Time: `23:40`\n  * Activity: `Product-category update`\n  * Detail: `Desk accessories \u00b7 Drinkware`\n* **Row 2:** \n  * Time: `23:38`\n  * Activity: `Campaign eligibility check`\n  * Detail: `Autumn offers \u00b7 Eligible`\n* **Row 3:** \n  * Time: `23:35`\n  * Activity: `Profile refresh`\n  * Detail: `Live profile fields updated`\n* **Row 4:** \n  * Time: `23:32`\n  * Activity: `Audience evaluation`\n  * Detail: `Returning customers \u2014 East Asia`\n\n#### **Audience Membership Panel**\n* **Audience:** Returning customers \u2014 East Asia\n* **Segments:** Repeat customer \u00b7 Home & lifestyle \u00b7 Mobile shopper\n* **Preferred categories:** Desk accessories \u00b7 Drinkware\n* **Last campaign:** Autumn offers\n* **Open rate:** 32.4%\n* **Click rate:** 6.8%\n\n#### **Activity Timeline Panel**\n* **Event 1:** Autumn offers (`32.4% open rate`)\n* **Event 2:** Home & Lifestyle Picks (`28.7% open rate`)\n* **Event 3:** Profile refreshed from live data (`Recorded`)",
+  "usage": {
+    "promptTokenCount": 1142,
+    "candidatesTokenCount": 553,
+    "totalTokenCount": 1695,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1092
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

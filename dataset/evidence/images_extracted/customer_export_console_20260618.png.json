@@ -1,0 +1,20 @@
+{
+  "image": "customer_export_console_20260618.png",
+  "extracted_text": "Based on the provided screenshot of the Northstar Shop console, here is the extracted information categorized as requested:\n\n### **Resource IDs & Filenames**\n* `export_1261` (Filename: `customer_export_1261.zip`)\n* `export_1260` (Filename: `customer_export_1260.zip`)\n* `export_1259` (Filename: `customer_export_1259.zip`)\n* `export_1258` (Filename: `customer_export_1258.zip`)\n\n### **Usernames & Emails**\n* `marcus.lee@northstar.shop`\n* `ingrid.dahl@outlook.com`\n* `sara.kim@northstar.shop`\n* `daniel.park@northstar.shop`\n\n### **Status Codes / Status Labels**\n* **Collecting** (for `export_1261`)\n* **Ready** (for `export_1260`)\n* **Packaging** (for `export_1259`)\n* **Ready** (for `export_1258`)\n\n### **Dates & Timestamps**\n* **Table Rows:**\n  * `export_1261`: `20 Jun 14:18 UTC`\n  * `export_1260`: `18 Jun 06:42 UTC`\n  * `export_1259`: `17 Jun 11:03 UTC`\n  * `export_1258`: `16 Jun 09:27 UTC`\n* **Sidebar Details (`export_1260`):**\n  * Created: `18 Jun 2026 06:42 UTC`\n  * Expires: `25 Jun 2026 06:42 UTC`\n* **Sidebar Activity Logs (`export_1260`):**\n  * `06:46` - Ready for download\n  * `06:45` - Package created\n  * `06:43` - Collecting customer records\n  * `06:42` - Export requested\n\n---\n\n### **Table Rows (Complete Data)**\n\n| Export ID | Filename | Owner / Email | Status | Created |\n| :--- | :--- | :--- | :--- | :--- |\n| **1** `export_1261` | `customer_export_1261.zip` | `marcus.lee@northstar.shop` | Collecting | 20 Jun 14:18 UTC |\n| **2** `export_1260` | `customer_export_1260.zip` | `ingrid.dahl@outlook.com` | Ready | 18 Jun 06:42 UTC |\n| **3** `export_1259` | `customer_export_1259.zip` | `sara.kim@northstar.shop` | Packaging | 17 Jun 11:03 UTC |\n| **4** `export_1258` | `customer_export_1258.zip` | `daniel.park@northstar.shop` | Ready | 16 Jun 09:27 UTC |\n\n---\n\n### **Additional UI Metrics & Details**\n* **Summary Metrics:**\n  * Ready Jobs: `2`\n  * Processing Jobs: `2`\n  * Created Today: `1`\n  * Downloads Today: `0`\n  * Total Job Count Badge: `4 jobs`\n  * Records Count: `4 records`\n* **Sidebar Details for `export_1260`:**\n  * Size: `18.4 MB`\n  * Checksum: `SHA-256 \u00b7 41ca09...`\n  * Download count: `0`\n  * Included: `Profile \u00b7 Orders \u00b7 Saved addresses`",
+  "usage": {
+    "promptTokenCount": 1142,
+    "candidatesTokenCount": 893,
+    "totalTokenCount": 2035,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1092
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

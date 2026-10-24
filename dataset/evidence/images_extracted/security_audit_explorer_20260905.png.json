@@ -1,0 +1,20 @@
+{
+  "image": "security_audit_explorer_20260905.png",
+  "extracted_text": "Based on the provided Sentinel console screenshot, here is the extracted information:\n\n### **Global Context**\n* **Application / Tenant:** Northstar Shop / Sentinel / Account events\n* **Environment:** Production\n* **Subject Filter:** `user_03`\n* **Date Range:** 18\u201326 Aug 2026 UTC\n* **Build / Workspace:** Production workspace (build 2026.10.4)\n\n---\n\n### **Summary Metrics**\n* **Events:** 6 (6 signed events, updated moments ago, 6 records)\n* **Categories:** 5\n* **Integrity Failures:** 0\n* **Partition:** 2026-Q3\n\n---\n\n### **User IDs & Usernames**\n* `user_03` (Subject)\n\n---\n\n### **Resource IDs & References (Audit Records)**\n* `audit_record_003`\n* `audit_record_002`\n* `audit_record_001`\n* `audit_record_006`\n* `audit_record_005`\n* `audit_record_004`\n\n---\n\n### **Status Codes / Integrity Values**\n* `Valid` (Integrity status for all events)\n\n---\n\n### **Dates & Timestamps**\n* **Range:** 18\u201326 Aug 2026 UTC\n* **Recorded At (Raw Event):** `2026-08-25T04:03:00Z`\n* **Table Timestamps (UTC):**\n  1. `25 Aug 04:03`\n  2. `25 Aug 03:21`\n  3. `24 Aug 16:14`\n  4. `22 Aug 11:27`\n  5. `20 Aug 09:42`\n  6. `18 Aug 14:05`\n\n---\n\n### **Table Rows (Events Grid)**\n\n| # | Time (UTC) | Event | Category | Subject | Actor | Integrity | Reference |\n|---|---|---|---|---|---|---|---|\n| **1** | 25 Aug 04:03 | Account closure recorded | Account lifecycle | user_03 | Automated workflow | Valid | audit_record_003 |\n| **2** | 25 Aug 03:21 | Session revoked | Session management | user_03 | Security system | Valid | audit_record_002 |\n| **3** | 24 Aug 16:14 | Recovery challenge completed | Authentication | user_03 | User (self) | Valid | audit_record_001 |\n| **4** | 22 Aug 11:27 | Email change confirmed | Profile update | user_03 | User (self) | Valid | audit_record_006 |\n| **5** | 20 Aug 09:42 | Login from new device | Authentication | user_03 | User (self) | Valid | audit_record_005 |\n| **6** | 18 Aug 14:05 | Password changed | Authentication | user_03 | User (self) | Valid | audit_record_004 |\n\n---\n\n### **Right Panel Details**\n\n#### **`audit_record_003` \u2022 Raw Event**\n* **event_type:** `account_closure_recorded`\n* **subject:** `user_03`\n* **actor:** `automated account workflow`\n* **recorded_at:** `2026-08-25T04:03:00Z`\n* **fingerprint:** `8f0c...31ad`\n* **signature:** `Valid`\n* **journal:** `2026-Q3`\n\n#### **Activity Timeline**\n* **25 Aug** \u2014 Account closure recorded\n* **25 Aug** \u2014 Session revoked\n* **24 Aug** \u2014 Recovery challenge completed\n* **22 Aug** \u2014 Email change confirmed",
+  "usage": {
+    "promptTokenCount": 1142,
+    "candidatesTokenCount": 911,
+    "totalTokenCount": 2053,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1092
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

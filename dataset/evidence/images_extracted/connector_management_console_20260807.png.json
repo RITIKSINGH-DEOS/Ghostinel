@@ -1,0 +1,20 @@
+{
+  "image": "connector_management_console_20260807.png",
+  "extracted_text": "Based on the provided system console screenshot, here is the extracted information:\n\n### **Header / General Information**\n* **Application / Service:** Northstar Shop / BridgeOps / Connections\n* **Environment:** PRODUCTION\n* **Region:** eu-west\n* **Timestamp:** 07 Aug 2026 08:00 UTC\n* **Version/Build:** build 2026.10.4 (Production workspace)\n* **Status:** 12 connectors\n\n---\n\n### **Metrics Summary Cards**\n* **Healthy:** 12\n* **Events / hour:** 4,113\n* **Delivery p95:** 1.8 s\n* **Backlog:** 18\n* **Destination health:** Healthy\n\n---\n\n### **Table Rows (Topology)**\n\n1. **Row 1:**\n   * **Connector:** `data_flow_1121`\n   * **Destination:** `customer_analytics_warehouse`\n   * **Selector:** `jain.aditi@gmail.com`\n   * **Mode:** Continuous\n   * **Events/hour:** 1,284\n   * **Last contact:** 07:59:42\n\n2. **Row 2:**\n   * **Connector:** `data_flow_9846`\n   * **Destination:** `customer_analytics_warehouse`\n   * **Selector:** `lucia-torres@gmail.com`\n   * **Mode:** Continuous\n   * **Events/hour:** 842\n   * **Last contact:** 07:59:36\n\n3. **Row 3:**\n   * **Connector:** Order notifications\n   * **Destination:** `notification_service`\n   * **Selector:** order events\n   * **Mode:** Continuous\n   * **Events/hour:** 650\n   * **Last contact:** 07:59:28\n\n4. **Row 4:**\n   * **Connector:** Delivery tracking\n   * **Destination:** `logistics_warehouse`\n   * **Selector:** shipment events\n   * **Mode:** Continuous\n   * **Events/hour:** 420\n   * **Last contact:** 07:59:13\n\n---\n\n### **Selected Connector Details (`data_flow_1121`)**\n* **Status:** Healthy\n* **Owner:** Data Platform\n* **Destination:** `customer_analytics_warehouse`\n* **Selector:** `jain.aditi@gmail.com`\n* **Sync mode:** Continuous sync\n* **Last response:** `200 OK` \u00b7 `1.8 s`\n\n#### **Activity Log:**\n* **07:59:42** \u2014 124 events delivered\n* **07:58:10** \u2014 checkpoint committed\n* **07:56:44** \u2014 18 events retried\n* **07:55:02** \u2014 destination acknowledged batch",
+  "usage": {
+    "promptTokenCount": 1116,
+    "candidatesTokenCount": 655,
+    "totalTokenCount": 1771,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1066
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

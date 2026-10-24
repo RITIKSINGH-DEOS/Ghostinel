@@ -1,0 +1,20 @@
+{
+  "image": "search_index_inspector_20260901.png",
+  "extracted_text": "Based on the system console screenshot provided, here is the extracted information:\n\n### **General Information & Context**\n* **Application/Brand:** Northstar Shop\n* **Page:** Search Console / Customer Search\n* **Search Query:** `email:g.silva76@gmail.com`\n* **Environment:** Production (`prod-eu`)\n* **Index:** `customer_directory_v3`\n* **Hits:** 2 hits\n* **Results Count:** 2 records\n\n---\n\n### **Resource IDs & Document IDs (`_id`)**\n* `search_428`\n* `search_1874`\n\n### **Customer References**\n* `user_13`\n* *(None / `\u2014` for the second record)*\n\n### **Usernames / Display Names**\n* Gabriel Silva\n* *(None / `\u2014` for the second record)*\n* Aditi Jain *(referenced in the Activity log)*\n\n### **Emails**\n* `g.silva76@gmail.com`\n* `g.silva76.jr@gmail.com`\n\n### **Dates & Timestamps**\n* **Execution Timestamp:** 01 Sep 2026 06:00:14 UTC\n* **Table Row 1 Last Indexed:** 05:58:21 UTC\n* **Table Row 2 Last Indexed:** 05:55:03 UTC\n* **Raw Document `indexed_at`:** 2026-09-01T05:58:21Z\n* **Activity Log Timestamps:**\n  * 06:00:14 (`email:g.silva76@gmail.com \u00b7 2 hits`)\n  * 05:42:03 (`customer_reference:user_9842 \u00b7 1 hit`)\n  * 05:31:18 (`display_name:\"Aditi Jain\" \u00b7 1 hit`)\n\n---\n\n### **Table Rows**\n\n**Main Results Table (`Results (2)`)**\n| \\_id | Display name | Email | Customer reference | Score | Last indexed |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **search_428** | Gabriel Silva | g.silva76@gmail.com | user_13 | 9.84 | 05:58:21 UTC |\n| **search_1874** | \u2014 | g.silva76.jr@gmail.com | \u2014 | 4.12 | 05:55:03 UTC |\n\n**Raw Document Panel (`Raw document \u2022 search_428`)**\n| Field | Value |\n| :--- | :--- |\n| **\\_index** | customer_directory_v3 |\n| **\\_id** | search_428 |\n| **display_name** | Gabriel Silva |\n| **email** | g.silva76@gmail.com |\n| **customer_reference** | user_13 |\n| **indexed_at** | 2026-09-01T05:58:21Z |",
+  "usage": {
+    "promptTokenCount": 1142,
+    "candidatesTokenCount": 712,
+    "totalTokenCount": 1854,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1092
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}
