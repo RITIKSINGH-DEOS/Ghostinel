@@ -125,36 +125,65 @@ def run_pipeline(dataset_dir: str = "dataset", output_path: str = "output.csv"):
 
 def verify_output(output_path: str, expected_count: int = 518):
     print("\nVerifying Output Contract Compliance...")
-    assert os.path.exists(output_path), f"Output file does not exist: {output_path}"
+    if not os.path.exists(output_path):
+        raise FileNotFoundError(f"Output file does not exist: {output_path}")
     
     with open(output_path, mode="r", encoding="utf-8") as f:
         reader = list(csv.DictReader(f))
 
-    assert len(reader) == expected_count, f"Expected {expected_count} rows, found {len(reader)}"
-    assert reader[0].keys() == {"case_id", "deletion_status", "steps_json"}, "Invalid columns"
+    if len(reader) != expected_count:
+        raise ValueError(f"Expected {expected_count} rows, found {len(reader)}")
+    if reader and set(reader[0].keys()) != {"case_id", "deletion_status", "steps_json"}:
+        raise ValueError(f"Invalid columns: {list(reader[0].keys()) if reader else []}")
 
     seen_cids = set()
-    for row in reader:
-        cid = row["case_id"]
-        stat = row["deletion_status"]
-        s_json = row["steps_json"]
-        
-        assert cid not in seen_cids, f"Duplicate case_id: {cid}"
-        seen_cids.add(cid)
-        assert stat in ["COMPLETE", "INCOMPLETE", "NOT_APPLICABLE"], f"Invalid status: {stat}"
+    violations: List[str] = []
 
-        parsed_steps = json.loads(s_json)
-        assert isinstance(parsed_steps, list), f"steps_json is not an array for {cid}"
+    for idx, row in enumerate(reader):
+        cid = row.get("case_id", f"row_{idx+1}")
+        stat = row.get("deletion_status", "")
+        s_json = row.get("steps_json", "")
+        
+        if cid in seen_cids:
+            violations.append(f"Row {idx+1} [{cid}]: Duplicate case_id")
+        seen_cids.add(cid)
+
+        if stat not in ["COMPLETE", "INCOMPLETE", "NOT_APPLICABLE"]:
+            violations.append(f"Row {idx+1} [{cid}]: Invalid deletion_status '{stat}'")
+
+        try:
+            parsed_steps = json.loads(s_json)
+        except Exception as e:
+            violations.append(f"Row {idx+1} [{cid}]: steps_json is invalid JSON: {e}")
+            continue
+
+        if not isinstance(parsed_steps, list):
+            violations.append(f"Row {idx+1} [{cid}]: steps_json is not a JSON list/array")
+            continue
 
         if stat == "NOT_APPLICABLE":
-            assert len(parsed_steps) == 0, f"NOT_APPLICABLE case {cid} must have empty steps array"
+            if len(parsed_steps) != 0:
+                violations.append(f"Row {idx+1} [{cid}]: NOT_APPLICABLE case must have empty steps array, found {len(parsed_steps)} steps")
         else:
-            assert len(parsed_steps) > 0, f"{stat} case {cid} must have non-empty steps array"
-            for step in parsed_steps:
-                assert "step_no" in step and "phase" in step and "system_id" in step and "resource_id" in step and "operation" in step and "state" in step, f"Missing fields in step {step}"
+            if len(parsed_steps) == 0:
+                violations.append(f"Row {idx+1} [{cid}]: {stat} case must have non-empty steps array (found 0 steps)")
+            for step_idx, step in enumerate(parsed_steps):
+                for req_fld in ["step_no", "phase", "system_id", "resource_id", "operation", "state"]:
+                    if req_fld not in step:
+                        violations.append(f"Row {idx+1} [{cid}, step #{step_idx+1}]: Missing required field '{req_fld}'")
                 if stat == "COMPLETE":
-                    assert step["phase"] == "VERIFICATION", f"COMPLETE case {cid} must have only VERIFICATION steps"
-                    assert step["evidence_id"] != "", f"COMPLETE case {cid} step must cite non-empty evidence_id"
+                    if step.get("phase") != "VERIFICATION":
+                        violations.append(f"Row {idx+1} [{cid}, step #{step_idx+1}]: COMPLETE case step phase must be VERIFICATION, found '{step.get('phase')}'")
+                    if not step.get("evidence_id"):
+                        violations.append(f"Row {idx+1} [{cid}, step #{step_idx+1}]: COMPLETE case step must cite a non-empty evidence_id")
+
+    if violations:
+        print(f"\n❌ [Contract Violations Found: {len(violations)}]")
+        for v in violations[:25]:
+            print(f"  - {v}")
+        if len(violations) > 25:
+            print(f"  ... and {len(violations) - 25} additional violations omitted.")
+        raise AssertionError(f"Output verification failed: {len(violations)} contract violation(s) detected across output rows.")
 
     print("ALL CONTRACT CHECKS PASSED PERFECTLY!")
 
